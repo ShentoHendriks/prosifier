@@ -74,10 +74,23 @@ body {
   margin-bottom: 20rem;
 }
 
+.app-layout {
+  display: flex;
+}
+
 .container {
   margin: 0 auto;
   width: 100%;
   max-width: 650px;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  width: 300px;
+  background: white;
+  border-right: solid 1px #eaeaea;
+  height: 100vh;
 }
 
 .tiptap p.is-editor-empty:first-child::before {
@@ -86,6 +99,11 @@ body {
   float: left;
   height: 0;
   pointer-events: none;
+}
+
+.app-content {
+  margin-left: 300px;
+  width: 100%;
 }
 
 .editor-title {
@@ -118,9 +136,14 @@ body {
 }
 
 .Toolbar {
+  position: fixed;
+  z-index: 9999;
   border-radius: 8px;
   border: 1px solid #eaeaea;
+  background: white;
   padding: 20px;
-  margin-top: 16px;
   color: #959595;
+  width: 650px;
+  top: 1rem;
+  right: 24rem;
 }
