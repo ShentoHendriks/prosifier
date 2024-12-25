@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap");
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: inter;
+  margin-bottom: 20rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 650px;
+}
+
+.tiptap p.is-editor-empty:first-child::before {
+  color: #adb5bd;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.editor-title {
+  font-family: "Literata", serif;
+  font-size: 22px;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+.editor-body {
+  font-family: "Literata", serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-optical-sizing: auto;
+}
+
+.ProseMirror:focus {
+  outline: none;
+}
+.ProseMirror p {
+  text-indent: 2rem;
+  margin-bottom: 0.5rem;
+}
+.ProseMirror p:first-child {
+  text-indent: 0;
+}
+
+.Toolbar {
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  padding: 20px;
+  margin-top: 16px;
+  color: #959595;
+}/*# sourceMappingURL=App.css.map */
